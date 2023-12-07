@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Sum {
+    public static void main(String[] args){
+        // 1. takes two integers from user using Scanner class
+        System.out.println("Enter two integers: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
+
+        // 2. prints the sum of them.
+        int sum = a+b;
+        System.out.println("Sum: " + sum);
+
+    }
+}
