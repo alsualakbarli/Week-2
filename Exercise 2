@@ -1,0 +1,28 @@
+if (args.length != 2) {
+            System.out.println("Usage: java Calc <number1> <number2>");
+            return;
+        }
+
+        // Parse command-line arguments as integers
+        int num1 = Integer.parseInt(args[0]);
+        int num2 = Integer.parseInt(args[1]);
+
+        // Perform calculations
+        int sum = num1 + num2;
+        int subtraction = num1 - num2;
+        int multiplication = num1 * num2;
+
+        // Check if num2 is not zero before performing division
+        if (num2 != 0) {
+            int division = num1 / num2;
+            int remainder = num1 % num2;
+
+            // Print results
+            System.out.println("Sum: " + sum);
+            System.out.println("Subtraction: " + subtraction);
+            System.out.println("Multiplication: " + multiplication);
+            System.out.println("Integer Division: " + division);
+            System.out.println("Remainder of Division: " + remainder);
+        } else {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
